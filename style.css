@@ -1,0 +1,173 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* ====================================
+   BARRA DE NAVEGACIÓN (NAVBAR)
+   ==================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Izquierda: Contenedor de Logo y Nombre */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+/* Logo */
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Nombre al lado del logo */
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Derecha: Lista de botones */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de los botones */
+.nav-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #374151;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efecto hover al pasar el ratón */
+.nav-btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+}
+
+/* ====================================
+   SECCIONES DE EJEMPLO
+   ==================================== */
+.seccion {
+    padding: 80px 30px;
+    min-height: 60vh;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.seccion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.seccion p {
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de la práctica previa de JS */
+.practica-js {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    max-width: 400px;
+}
+
+.practica-js input {
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.practica-js button {
+    padding: 8px 12px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+#caja {
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;
+    border: 2px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+/* Adaptación responsive para celulares/móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
