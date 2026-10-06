@@ -1,4 +1,4 @@
-/* Reseteo básico */
+/* Reseteo basico */
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +15,8 @@ body {
     color: #333333;
 }
 
-/* ====================================
-   BARRA DE NAVEGACIÓN (NAVBAR)
-   ==================================== */
-.navbar {
+/* Arriba / Navegacion */
+.cabecera {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +28,8 @@ body {
     z-index: 1000;
 }
 
-/* Izquierda: Contenedor de Logo y Nombre */
-.nav-brand {
+/* Logo y titulo */
+.marca {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -39,23 +37,21 @@ body {
     color: #2c3e50;
 }
 
-/* Logo */
-.nav-logo {
+.logo {
     width: 40px;
     height: 40px;
     object-fit: contain;
     border-radius: 8px;
 }
 
-/* Nombre al lado del logo */
-.brand-name {
+.titulo-marca {
     font-size: 1.25rem;
     font-weight: 700;
     color: #2c3e50;
 }
 
-/* Derecha: Lista de botones */
-.nav-menu {
+/* Lista de botones */
+.menu {
     display: flex;
     list-style: none;
     gap: 12px;
@@ -64,8 +60,7 @@ body {
     padding: 0;
 }
 
-/* Estilo de los botones */
-.nav-btn {
+.boton {
     display: inline-block;
     padding: 9px 18px;
     font-size: 0.95rem;
@@ -79,8 +74,7 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-/* Efecto hover al pasar el ratón */
-.nav-btn:hover {
+.boton:hover {
     background-color: #007bff;
     color: #ffffff;
     border-color: #007bff;
@@ -88,13 +82,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
 }
 
-.nav-btn:active {
+.boton:active {
     transform: translateY(0);
 }
 
-/* ====================================
-   SECCIONES DE EJEMPLO
-   ==================================== */
+/* Partes de la pagina */
 .seccion {
     padding: 80px 30px;
     min-height: 60vh;
@@ -113,8 +105,8 @@ body {
     margin-bottom: 15px;
 }
 
-/* Contenedor de la práctica previa de JS */
-.practica-js {
+/* Cuadro para practica js */
+.cuadro-js {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -123,7 +115,7 @@ body {
     max-width: 400px;
 }
 
-.practica-js input {
+.cuadro-js input {
     padding: 8px;
     margin: 8px 0;
     width: 100%;
@@ -131,7 +123,7 @@ body {
     border-radius: 4px;
 }
 
-.practica-js button {
+.cuadro-js button {
     padding: 8px 12px;
     margin: 5px 0;
     cursor: pointer;
@@ -151,19 +143,39 @@ body {
     border-radius: 6px;
 }
 
-/* Adaptación responsive para celulares/móviles */
+/* Para celular */
 @media (max-width: 768px) {
-    .navbar {
+    .cabecera {
         flex-direction: column;
         gap: 15px;
         padding: 15px;
     }
 
-    .nav-menu {
+    .menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
     }
+
+    .boton {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Imagenes banner */
+.banner {
+    width: 100%;
+    max-height: 350px; 
+    overflow: hidden;  
+}
+
+.banner img {
+    width: 100%;
+    height: 350px;      
+    object-fit: cover;  
+    display: block;
+}
 
     .nav-btn {
         padding: 8px 14px;
